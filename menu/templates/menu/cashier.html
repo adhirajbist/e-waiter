@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+ <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+ <style>
+ .a
+ </style>
+</head>
+<body>
+{% for food in foods %}
+<div class="menu-item">
+         <div class="menu-item-name">
+            {{food.name}}
+         </div>
+         <div class="menu-item-price">
+            ₹ {{food.price}}
+         </div>
+     <div class="quantity">
+        Quantity : {{food.quantity}}
+    </div>
+
+      </div>
+{% endfor %}
+<a class="btn btn-success" href="http://127.0.0.1:8000/admin/">Admin</a>
+</body>
+</html>

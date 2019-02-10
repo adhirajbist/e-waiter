@@ -1,0 +1,182 @@
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.menu-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: rgb(92, 92, 92);
+}
+ 
+.menu-section {
+  margin-bottom: 80px;
+}
+ 
+.menu-section-title {
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0; 
+  text-align: Center;
+}
+ 
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+ 
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+ 
+.menu-item-description {
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+ 
+.menu-item-price{
+  float: left;
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+.quantity {
+  float: right;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+ 
+button:focus,
+input:focus {
+  outline:0;
+}
+
+myBtn: focus,
+input: focus {
+	outline:0;
+} 
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
